@@ -111,15 +111,27 @@ loop()
 
 const t1 = gsap.timeline({defaults:{duration:1}})
 t1.fromTo(mesh.scale,{z:0,x:0,y:0},{z:1,x:1,y:1})
+t1.fromTo('nav',{y:'-100%'},{y:'0%'})
+t1.fromTo('.globeTitle',{opacity:0},{opacity:1})
+t1.fromTo('.desTitle',{opacity:0},{opacity:1})
+t1.fromTo('.title',{opacity:0},{opacity:1})
 
 });
 
 
   return (
     <>
-    <h1 className='globeTitle'>Hi Im Sanath SB</h1><br/>
-    <p className='desTitle'>I am a frontend developer</p>
+    <h1 className='globeTitle'>Hi I'm Sanath SB</h1><br/>
+    <p className='desTitle'>I Am A Frontend Developer | UI/UX Designer</p>
     <canvas className='webgl'></canvas>
+    <nav>
+      <a href='/'>Sanath SB</a>
+      <ul>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <h1 className='title'>apply law of inertia to see the magic..................</h1>
     </>
   )
 }
