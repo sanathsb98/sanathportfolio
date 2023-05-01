@@ -81,3 +81,12 @@ nav ul{
     top: 30%;
     transform: translate(-10%,-25%);
 }
+.exploreBtn{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 100px;
+    transform: translate(-70%,-25%);
+    z-index: 10;
+    border-radius: 100px;
+}

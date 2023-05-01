@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './globe.css'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -114,8 +115,8 @@ t1.fromTo(mesh.scale,{z:0,x:0,y:0},{z:1,x:1,y:1})
 t1.fromTo('nav',{y:'-100%'},{y:'0%'})
 t1.fromTo('.globeTitle',{opacity:0},{opacity:1})
 t1.fromTo('.desTitle',{opacity:0},{opacity:1})
+t1.fromTo('.exploreBtn ',{opacity:0},{opacity:1})
 t1.fromTo('.title',{opacity:0},{opacity:1})
-
 });
 
 
@@ -123,9 +124,10 @@ t1.fromTo('.title',{opacity:0},{opacity:1})
     <>
     <h1 className='globeTitle'>Hi I'm Sanath SB</h1><br/>
     <p className='desTitle'>I Am A Frontend Developer | UI/UX Designer</p>
+    <Button className='exploreBtn rounded-pill' variant="primary">Explore</Button>
     <canvas className='webgl'></canvas>
     <nav>
-      <a href='/'>Sanath SB</a>
+      <a href='/'>Sanath SB | Aeira</a>
       <ul>
         <li>Projects</li>
         <li>Contact</li>
