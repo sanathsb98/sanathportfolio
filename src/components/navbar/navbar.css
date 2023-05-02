@@ -1,0 +1,76 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    z-index: 10;
+  margin: 25px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+ul{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+   opacity: 0.6;
+
+}
+ul li a:hover{
+ color: white;
+ opacity: 0.8;
+}
+.navName{
+    margin-left: -20px;
+}
+.logoTitle{
+  font-size: 20px;
+}
+@media screen and (max-width:455px) {
+
+    ul{
+        gap: 15px;
+    }
+}
+@media screen and (max-width:395px) {
+    .navbar{
+        margin: 18px;
+    }
+    ul{
+        gap: 15px;
+    }
+}
+@media screen and (max-width:380px) {
+    .navbar{
+        margin: 15px;
+    }
+    li a{
+        font-size: 18px;
+    }
+    .logoTitle{
+      font-size: 18px;
+    }
+    ul{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:285px) {
+    .navbar{
+        margin: 9px;
+    }
+    ul{
+        gap: 10px;
+    }
+    li a{
+        font-size: 15px;
+    }
+    .logoTitle{
+      font-size: 15px;
+    }
+}

@@ -9,37 +9,18 @@
     position: absolute;
     top:0;
     left:0;
-    z-index: 1;
+    z-index: 5;
 }
 
-
-.globeTitle{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 2;
-    position: absolute;
-    font-size: 3rem;
-    left: 50%;
-    top: 78%;
-    transform: translate(-50%,-75%);
-}
-.desTitle{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 2;
-    position: absolute;
-    font-size: 1rem;
-    left: 52%;
-    top: 80%;
-    transform: translate(-60%,50%);
-}
 nav{
     color: white;
    z-index: 2;
    position: relative;
-   padding: 4rem 8rem;
+   padding: 1rem 8rem;
+   background-color: rgb(83, 90, 90);
    display: flex;
    justify-content: space-between;
+   width: 100%;
 }
 nav a{
     text-decoration: none;
@@ -89,4 +70,9 @@ nav ul{
     transform: translate(-70%,-25%);
     z-index: 10;
     border-radius: 100px;
+}
+.introInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

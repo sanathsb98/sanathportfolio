@@ -1,0 +1,49 @@
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    z-index: 6;
+   top:0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+    opacity: 0.8;
+    padding-left: 20px;
+    background-color: aquamarine;
+    height: 0px;
+  
+    
+  
+   
+   
+}
+.explorebtn{
+    cursor: pointer;
+}
+.titleName{
+    font-size: 50px;
+    
+}
+.titleDes{
+    font-size: 30px;
+}
+@media screen and (max-width:458px) {
+   .intro{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   }
+}
+@media screen and (max-width:660px) {
+    .titleName{
+        font-size: 50px;
+    }
+    .titleDes{
+        font-size: 20px;
+    }
+}

@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './globe.css'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import Button from 'react-bootstrap/Button';
+import Navbar from '../navbar/navbar';
+import Intro from '../intro/intro';
+
 
 
 
@@ -34,7 +36,7 @@ scene.background = new THREE.Color("#000019");
 
 //geometry1:
 const geometry = new THREE.SphereGeometry( 3,30,30 ); 
-const material = new THREE.MeshBasicMaterial( {   map: backgroundTexture} ); 
+const material = new THREE.MeshStandardMaterial( {   map: backgroundTexture} ); 
 var backgroundMesh = new THREE.Mesh(backgroundGeometry, material);
 const mesh = new THREE.Mesh( geometry, material );
 scene.add(backgroundMesh);
@@ -122,18 +124,10 @@ t1.fromTo('.title',{opacity:0},{opacity:1})
 
   return (
     <>
-    <h1 className='globeTitle'>Hi I'm Sanath SB</h1><br/>
-    <p className='desTitle'>I Am A Frontend Developer | UI/UX Designer</p>
-    <Button className='exploreBtn rounded-pill' variant="primary">Explore</Button>
-    <canvas className='webgl'></canvas>
-    <nav>
-      <a href='/'>Sanath SB | Aeira</a>
-      <ul>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <h1 className='title'>apply law of inertia to see the magic..................</h1>
+    <Navbar/>
+    <Intro/>
+    <canvas className='webgl'>
+    </canvas>
     </>
   )
 }
